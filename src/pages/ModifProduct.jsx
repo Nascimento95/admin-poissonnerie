@@ -37,6 +37,7 @@ const ModifProduct = () => {
                             name={product.name}
                             prixKilo={product.kiloPrice}
                             poid={product.netWeight}
+                            prixPiece={product.pricePerPiece}
                             width={300}
                             height={200}
                         />

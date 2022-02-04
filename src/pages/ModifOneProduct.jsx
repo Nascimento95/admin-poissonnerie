@@ -55,7 +55,8 @@ const ModifOneProduct = () => {
                 />
             </DivCard>
             <DivModal>
-                <ModalModif/>
+                <ModalModif 
+                    idProduit={id}/>
             </DivModal>
         </Container>
     );

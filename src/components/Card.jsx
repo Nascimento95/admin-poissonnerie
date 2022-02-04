@@ -24,7 +24,7 @@ export default function MediaCard({ name, image, poid, prixKilo, prixPiece, widt
                 {name}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                <p>Description</p>
+                {/* <p>Description</p> */}
                 <p>Poids: {poid}g</p>
                 <p>Prix au kilo:{prixKilo}€ kg</p>
                 <p>Prix pièce :{prixPiece}€ </p>
