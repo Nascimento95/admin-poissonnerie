@@ -32,8 +32,8 @@ const ModifOneProduct = () => {
 
     useEffect(() => {
         fetch(`http://localhost:5000/products/${id}`)
-         .then(response => response.json())
-         .then(data => setFish(data))
+        .then(response => response.json())
+        .then(data => setFish(data))
     },[])
 
     if(!fish){

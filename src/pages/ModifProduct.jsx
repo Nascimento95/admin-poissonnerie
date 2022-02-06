@@ -2,20 +2,10 @@ import React, {useState, useEffect} from 'react';
 import NavFixeLeft from '../components/NavFixeLeft';
 import getProduct from '../api/getProduct';
 import Card from '../components/Card'
-import styled from 'styled-components'
 import { Link } from 'react-router-dom';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
 
-const Container = styled.div`
-    display: flex;
-`
-const ContainerCard = styled.div`
-    display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: stretch;
-	align-content: stretch;
-`
 const ModifProduct = () => {
     const [products, setProducts] = useState([])
 
@@ -27,9 +17,9 @@ const ModifProduct = () => {
         return <p>Chargement ...</p>
     }
     return (
-        <Container>
+        <Box sx={{display:"flex"}}>
             <NavFixeLeft/>
-            <ContainerCard>
+            <Grid sm={10} sx={{display:"flex",flexDirection:"row",flexWrap:'wrap', justifyContent:"center"}}>
                 {products.map((product,index) =>
                     <Link to={`/modif/${product._id}`}>
                         <Card key={`${product.name}${index}`}
@@ -43,8 +33,8 @@ const ModifProduct = () => {
                         />
                     </Link>
                 )}
-            </ContainerCard>
-        </Container>
+            </Grid>
+        </Box>
     );
 };
 

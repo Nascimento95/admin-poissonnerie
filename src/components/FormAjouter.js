@@ -2,18 +2,10 @@ import React from 'react';
 import TextField from '@mui/material/TextField';
 import Buton from '../components/Buton';
 import { useFormik } from 'formik'
-import styled from 'styled-components';
 import PostProduct from '../api/PostProduct'
 import InputSelect from '../components/InputSelect'
-const ContainerForm = styled.div`
-    width: 100%;
-    margin: 00px 50px 0px 0px;
-    height: 100vh;
-    h1{
-        text-align: center;
-        margin:50px 0px 50px 0px;
-    }
-`
+import Grid from '@mui/material/Grid';
+
 const FormAjouter = () => {
 
     const formik = useFormik({
@@ -38,7 +30,7 @@ const FormAjouter = () => {
     console.log("mon formik",formik.values.categories);
     //   console.log(formik.values.name);
     return (
-        <ContainerForm>
+        <Grid item sm={5} md={10} sx={{textAlign:"center", ml:2, mr:2}}>
             <h1>Ajouter un produit sur le site </h1>
             <form onSubmit={formik.handleSubmit}>
                 <TextField sx={{mx:2, mt:2}}
@@ -122,7 +114,7 @@ const FormAjouter = () => {
                 />
                 <Buton text="valider" type="submit"/>
             </form>
-        </ContainerForm>
+        </Grid>
     );
 };
 

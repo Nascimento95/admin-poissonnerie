@@ -7,7 +7,7 @@ const Input = ({ label, name, change, valeur}) => {
                 label={label} 
                 name={name}
                 variant="outlined"
-                sx={{ml:1}}
+                sx={{ml:2}}
                 onChange={change}
                 value={valeur}
             />

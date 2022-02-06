@@ -24,7 +24,7 @@ export default function MultipleSelectCheckmarks({values,change,name}) {
     const[categories, setCategories] = React.useState([])
     // ce state stock la valeur de mon input checkbox (les id des categorie)
     const [selectedCategorie, setSelectedCategorie] = React.useState([])
-   
+
     useEffect(() => {
         fetchCategories()
       }, [])

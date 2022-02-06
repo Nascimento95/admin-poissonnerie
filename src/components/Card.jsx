@@ -9,10 +9,10 @@ import Typography from '@mui/material/Typography';
 // import EditIcon from '@mui/icons-material/Edit';
 
 export default function MediaCard({ name, image, poid, prixKilo, prixPiece, width, height}) {
-  
+    
     return (
     
-        <Card sx={{maxWidth:{width},ml:2, flexWrap:"wrap", mb:2}}>
+        <Card sx={{maxWidth:{width},ml:2, mb:2}}>
             <CardMedia
                 component="img"
                 height={`${height}`}
@@ -25,7 +25,7 @@ export default function MediaCard({ name, image, poid, prixKilo, prixPiece, widt
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                 {/* <p>Description</p> */}
-                <p>Poids: {poid}g</p>
+                <p>Poids:{poid}g</p>
                 <p>Prix au kilo:{prixKilo}€ kg</p>
                 <p>Prix pièce :{prixPiece}€ </p>
                 </Typography>
@@ -38,5 +38,5 @@ export default function MediaCard({ name, image, poid, prixKilo, prixPiece, widt
                 <Button size="small">Learn More</Button> */}
             </CardActions>
         </Card>
-  );
+);
 }
