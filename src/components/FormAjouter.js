@@ -36,7 +36,7 @@ const FormAjouter = () => {
                 <TextField sx={{mx:2, mt:2}}
                     required
                     id="name"
-                    label="name"
+                    label="Nom produit"
                     name="name"
                     type="text"
                     onChange={formik.handleChange}
@@ -45,56 +45,49 @@ const FormAjouter = () => {
                 />
                 <TextField sx={{mx:2, mt:2}} 
                     id="characteristic"
-                    label="characteristic" 
+                    label="Caractéristique" 
                     name="characteristic"
                     type="text"    
                     onChange={formik.handleChange}
                     value={formik.values.characteristic}
                 />
                 <TextField sx={{mx:2, mt:2}}  
-                    label="kiloPrice" 
+                    label="Prix au kg" 
                     name="kiloPrice"
                     type="number"
                     onChange={formik.handleChange}
                     value={formik.values.kiloPrice}
                 />
                 <TextField sx={{mx:2, mt:2}}  
-                    label="pricePerPiece" 
+                    label="Prix à la pièce" 
                     name="pricePerPiece"
                     type="number"
                     onChange={formik.handleChange}
                     value={formik.values.pricePerPiece}
                 />
                 <TextField sx={{mx:2, mt:2}}  
-                    label="netWeight" 
+                    label="Poids net" 
                     name="netWeight"
                     type="number"
                     onChange={formik.handleChange}
                     value={formik.values.netWeight}
                 />
                 <TextField sx={{mx:2, mt:2}}  
-                    label="conditioning"
+                    label="Conditionnement"
                     name="conditioning"
                     type="text"
                     onChange={formik.handleChange}
                     value={formik.values.conditioning} 
                 />
-                {/* <TextField sx={{mx:2, mt:2}}  
-                    label="categories"
-                    name="categories"
-                    type="categories"
-                    onChange={formik.handleChange}
-                    value={formik.values.categories} 
-                /> */}
                 <TextField sx={{mx:2, mt:2}}  
-                    label="image" 
+                    label="Image" 
                     name="image"
                     type="text"
                     onChange={formik.handleChange}
                     value={formik.values.image}
                 />
                 <TextField sx={{mx:2, mt:2}}  
-                    label="fishingArea" 
+                    label="Zone de pêche" 
                     name="fishingArea"
                     type="text"
                     onChange={formik.handleChange}
